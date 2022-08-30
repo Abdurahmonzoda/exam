@@ -115,6 +115,30 @@ var empl5 = new Employee
     Roles = roles1,
     Experiences = experiences
 };
-var employees = new List<EmployeeService>();
+List< Employee> employees = new List<Employee>();
+employees.Add(empl1);
+employees.Add(empl2);
+employees.Add(empl3);
+employees.Add(empl4);
+employees.Add(empl5);
+foreach (var employee in employees)
+{
+    Console.WriteLine(new string(c: '*', 50)); 
+    Console.WriteLine(employee.FirsName + " " + employee.LastName);
+    Console.Write("Experiences : ");
+    foreach(var dep in employee.Experiences)
+    {
+        Console.Write(dep.Name + " ");
+    }
+    Console.WriteLine();
+    Console.Write("Rolles : ");
+    foreach(var rol in employee.Roles)
+    {
+        Console.Write(rol.Name + " ");
+    }
+    Console.WriteLine(); 
+
+}
+
 
 

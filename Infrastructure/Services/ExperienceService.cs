@@ -24,7 +24,7 @@ namespace Infrastructure.Services
             rol.Name = experience.Name;
             rol.Description = experience.Description;
             rol.Company = experience.Company;
-            rol.EmployeeId = experience.employeeld;
+            rol.EmployeeId = experience.EmployeeId;
 
         }
         public Experience GetExperienceById(int id)
