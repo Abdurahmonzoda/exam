@@ -1,6 +1,7 @@
 ﻿using Domain.Models;
-using Infrastructure.Services; 
-var dep1 = new Department() ;
+using Infrastructure.Services;
+using Domain.DataBase;
+/*var dep1 = new Department() ;
 dep1.Id = 1;
 dep1.Name = "IT";
 dep1.Description = "helloIT";
@@ -139,6 +140,66 @@ foreach (var employee in employees)
     Console.WriteLine(); 
 
 }
+*/
+
+/*
+
+var rec = new Rectangle(12 , 12 , "Rectangle"); 
+Console.WriteLine(rec.Area());
+rec.Draw();
+
+
+*/
+
+
+
+
+
+
+
+
+var orcConnection = new OracleConnection("adsfasdf", TimeSpan.FromSeconds(2)); 
+
+var comand = new DbCommand(orcConnection , "Select all Students");
+
+var comand1 = new DbCommand(orcConnection, "Select all People"); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
